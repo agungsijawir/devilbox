@@ -60,8 +60,9 @@ services:
 
       ##
       ## Forwarding
+      ## Notes: Please check your local DNS Router if problem resolver exists!
       ##
-      - DNS_FORWARDER=${BIND_DNS_RESOLVER:-8.8.8.8,8.8.4.4}
+      - DNS_FORWARDER=${BIND_DNS_RESOLVER:-192.168.18.1,1.1.1.1}
 
       ##
       ## Security
